@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMPAGE</title>
+</head>
+
+<body >
+    <!-- getElementBY () -->
+    <div>
+        <p id="intro">HTML5</p>
+        <p class="myCss">CSS3</p>
+        <p class="program">JS</p>
+        <p class="program">ECMASCRIPT</p>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="last"></p><br>
+        <h1 id="myTitle"></h1><br>
+    </div>
+
+    <!-- form validaton -->
+    <div>
+        <form action="" id="frm1">
+            FirstName : <input type="text" value="" name="fname">
+        </form>
+        <p id="formResult"></p><br>
+        <p id="myDate"></p><br>
+
+        <form name="myForm" action="" id="frm2" onsubmit="return validateForm()">
+            Name : <input type="text" name="fname">
+            <input type="submit" value="submit">
+        </form><br>
+    </div>
+
+    <!-- changing css -->
+    <div>
+        Numeeros : <input type="number" id="numb" required>
+        <button type="button" onclick="myFunction()">Click</button>
+        <p id="result"></p>
+    </div>
+
+    <!--ONCLICK this -->
+    <div>
+        <h6 id="myLine"></h6>
+        <button id="red" type="button" onclick="myFunctionRed()">red</button>
+        <button id="blue" type="button" onclick="myFunctionBlue()">blue</button>
+    </div>
+
+    <!-- ONCLICK -->
+    <div onload="myFontSize()">
+        <h1 onclick="changeText(this)">Click on this text</h1>
+        <button type="button" onclick="myClick(this)">click</button>
+        <h2 id="myH2"></h2>
+        <button id="newBtn" type="button">click</button><br><br>
+
+        <button id="first" type="button">first</button>
+        <button id="second" type="button">second</button>
+        <h4 id="newP">C'est mon choix</h4>
+    </div>
+
+    <!-- ONCHANGE -->
+    <div>
+       NAME: <input type="text" id="input1"
+       onchange="myShape()"
+       >
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+
+</html>

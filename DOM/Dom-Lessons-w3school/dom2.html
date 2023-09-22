@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMPAGE-2</title>
+</head>
+
+<body>
+    <!-- onload="alert('this is alert ')" -->
+    <div>
+        <h5 onclick="changeText(this)">click</h5><br>
+        <button id="myBtn" type="button" onclick="myClick()">click</button><br><br>
+        Name : <input type="text" onchange="myUpperCase()" onfocus="myFocus(this)" id="fname">
+    </div><br>
+    <!-- onmouseover onmouseout -->
+    <div id="espace" 
+        onmouseover="myOver(this)" 
+        onmouseout="myOut(this)" 
+        onmousedown="myDown(this)"
+        onmouseup="myUp(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+        DOM event
+    </div><br>
+    <!-- AddEventListener -->
+    <div>
+        <button id="event" type="button">Button</button>
+        <p id="demo"></p><br><br>
+        <button id="event2" type="button">Button2</button>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+    </div>
+    <div>
+        Name:<input type="text" id="firstName"><br>
+        LastN:<input type="text" id="lastName"><br>
+        <button type="button" id="myButton">showNames</button>
+        <p id="showNames"></p>
+    </div>
+    <div>
+        <button id="myButtonTime" type="button">click</button>
+        <p id="showTime"></p>
+    </div>
+
+
+
+    <button onclick="removeHandler()" id="myBtn">Remove</button>
+</div>
+
+<p id="demo"></p>
+
+
+
+    <script src="/lessonDOM/dom2.js"></script>
+</body>
+
+</html>

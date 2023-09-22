@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecmascript</title>
+</head>
+
+<body>
+    <!-- JavaScript Can Change HTML Content -->
+    <div class="container">
+        <p id="demo">Javascript peut changer HTML contenu</p>
+        <p id="demo1">Javascript peut changer HTML contenu</p>
+        <p id="demo2">Javascript peut changer HTML contenu</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML="hi"'>click me</button>
+        <button type="button" onclick="document.getElementById('demo1').innerHTML='salut'">click me</button>
+        <button type="button" onclick="document.getElementById('demo2').innerHTML='bonjour'">click me</button>
+    </div><br>
+    <!-- JavaScript Can Change HTML Attribute Values -->
+    <div class="container">
+        <img id="myImage" src="./images/lightgray.gif" alt="gray" width="100px">
+        <button onclick="document.getElementById('myImage').src='./images/lightyellow.gif'">Allumer</button>
+        <button onclick="document.getElementById('myImage').src='./images/lightgray.gif'">S'eteindre</button>
+    </div><br>
+    <!-- JavaScript Can Change HTML Styles (CSS -->
+    <div class="container">
+        <p id="demoP">cette couleur de ligne a été changé par js code</p>
+        <button style="background-color: rgb(249, 62, 38);" type="button" onclick="document.getElementById('demoP').style.color='red'">red</button>
+        <button style="background-color: rgb(118, 200, 216);" type="button" onclick="document.getElementById('demoP').style.color='blue'">blue</button>
+    </div>
+    <!--JavaScript Can Hide HTML Elements  -->
+    <div class="container">
+        <p id="hiddenP">cette ligne va disparaître par js</p>
+        <button  type="button" onclick="document.getElementById('hiddenP').style.display='none'">hidden</button>
+        <button  type="button" onclick="document.getElementById('hiddenP').style.display='block'">block</button>
+    </div>
+    <div class="container">
+        <p id="empty"></p>
+    </div>
+
+    <script src="script.js">
+        document.getElementById('empty').innerHTML="Cette ligne completement à été ajouté à l'intérieur de script"
+    </script>
+</body>
+
+</html>
