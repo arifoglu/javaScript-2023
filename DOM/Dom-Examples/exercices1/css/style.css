@@ -1,0 +1,67 @@
+/***********************************************
+*
+*		MISE EN PAGE
+*
+**********************************************/
+
+body {
+	background:url(../images/bkg_motif.gif) repeat #eee; 
+	margin:0px; 
+	padding:0; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+div#page{	
+	width:580px;
+	margin:60px auto;
+	position:relative;
+}
+ul#onglet{
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:absolute;
+	top:-40px;
+}
+ul#onglet li.onglet_actif{
+	height:39px;
+	border-top:1px solid #999;
+	border-right:1px solid #999;
+	border-left:1px solid #999;
+	border-bottom:1px solid #fff;
+	border-radius:20px 5px 0 0;
+	background-color:#fff;
+	color:#000;
+}
+ul#onglet li{
+	display:block;
+	position:relative;
+	padding:0px 30px;
+	height:39px;
+	line-height:40px;
+	margin-right:3px;
+	border:1px solid #777;
+	width:auto;
+	float:left;
+	text-decoration:none;
+	cursor:pointer;
+	border-radius:20px 5px 0 0;
+	background-color:#ddd;
+	color:#fff;
+}
+
+div.txt_onglet_actif{
+	padding:20px 40px;
+	border:1px solid #999;
+	clear:both;		
+	width:500px;
+	min-height:500px;	
+	box-shadow:4px 4px 5px #999;	
+	background-color:#fff;	
+}
+div.txt_onglet_invisible{
+	display:none;		
+}
+div.txt_onglet_actif img{
+	float:left; margin:0 20px 20px 0;
+}
