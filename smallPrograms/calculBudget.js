@@ -1,3 +1,5 @@
+window.onload = function(){
+
 /// for example :this notes was taken from a person's personal agendas
 /// this persons takes notes when take a money and spends money
 /// first element is salary others are costs
@@ -9,20 +11,31 @@ const incomeStatement =
 342,"printer",
  450, 32, 45, "fitness", 64, 10, 23, 12,
   2, 56, 7];
-document.getElementById("agenda").onmouseover =()=>{
-    document.getElementById("agendaShow").style.display = "block"
-};
-document.getElementById("agenda").onmouseout =()=>{
-    document.getElementById("agendaShow").style.display = "none"
-}
+let currency = "CHF";
 
+// for show this list we have to print on screen
+
+let buttonAgenda = document.querySelector("button#agenda");
+// console.log(buttonAgenda);
+let buttonAgenda2 = document.querySelector("button#agenda2");
+// console.log(buttonAgenda2);
+let agendaShow = document.querySelector("p#agendaShow");
+// console.log(agendaShow);
+
+buttonAgenda.onclick = function(){
+   agendaShow.style.display = "block";
+   agendaShow.innerHTML = agendaShow.innerHTML;
+}
+buttonAgenda2.onclick = function(){
+   agendaShow.style.display = "none"
+}
 
  // 1. we detect salary of person and show on the page
  const salary = incomeStatement[0];
  console.log(salary);// 15000 is salary
 
  document.getElementById("salary").onclick = ()=>{
-    document.getElementById("salaryShow").innerHTML = salary;
+    document.getElementById("salaryShow").innerHTML = salary + currency;
  };
 
  // 2. we have to detect of numbers of Array
@@ -38,7 +51,7 @@ document.getElementById("agenda").onmouseout =()=>{
  let costs = total - salary;
  console.log(costs);     // 5222
  document.getElementById("costs").onclick = ()=>{
-    document.getElementById("costShow").innerHTML = costs;
+    document.getElementById("costShow").innerHTML = costs + currency;
  };
 
 
@@ -47,7 +60,7 @@ document.getElementById("agenda").onmouseout =()=>{
  console.log(residualIncome); // 9778
 
  document.getElementById("reste").onclick = ()=>{
-    document.getElementById("resteShow").innerHTML = residualIncome;
+    document.getElementById("resteShow").innerHTML = residualIncome + currency;
  };
 
  // 6.we will show a result if any need help and show on the page
@@ -60,4 +73,5 @@ document.getElementById("agenda").onmouseout =()=>{
          alert("everything is alright be cool :)")
       }
    } ;
+}
  
