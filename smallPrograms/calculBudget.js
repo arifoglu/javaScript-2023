@@ -11,7 +11,7 @@ const incomeStatement =
 342,"printer",
  450, 32, 45, "fitness", 64, 10, 23, 12,
   2, 56, 7];
-let currency = "CHF";
+let currency = "-CHF";
 
 // for show this list we have to print on screen
 
