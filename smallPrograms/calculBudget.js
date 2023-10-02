@@ -8,10 +8,8 @@ window.onload = function(){
 const incomeStatement = 
 [15000, 2000, 1000, 300, 200,
 "important electronic", 600, 79, "abo", 
-342,"printer",
- 450, 32, 45, "fitness", 64, 10, 23, 12,
-  2, 56, 7];
-let currency = "-CHF";
+342,"printer",450, 32, 45, "fitness", 64, 10, 23, 12,2, 56, 7];
+let currency = "CHF";
 
 // for show this list we have to print on screen
 
@@ -32,7 +30,7 @@ buttonAgenda2.onclick = function(){
 
  // 1. we detect salary of person and show on the page
  const salary = incomeStatement[0];
- console.log(salary);// 15000 is salary
+ // console.log(salary);// 15000 is salary
 
  document.getElementById("salary").onclick = ()=>{
     document.getElementById("salaryShow").innerHTML = salary + currency;
@@ -40,16 +38,16 @@ buttonAgenda2.onclick = function(){
 
  // 2. we have to detect of numbers of Array
  const numbersOfIncome = incomeStatement.filter(value => typeof value === "number");
- console.log(numbersOfIncome); //
+ // console.log(numbersOfIncome); //
 
  // 3.we will do an addition with these numbers
  let total = 0;
  numbersOfIncome.map(values => total += values);
- console.log(total); // 20222 
+ // console.log(total); // 20222 
 
  // 4.we will find a costs and show on the page
  let costs = total - salary;
- console.log(costs);     // 5222
+ // console.log(costs);     // 5222
  document.getElementById("costs").onclick = ()=>{
     document.getElementById("costShow").innerHTML = costs + currency;
  };
@@ -57,7 +55,7 @@ buttonAgenda2.onclick = function(){
 
  // 5.we will find a residual income and show on the page
  let residualIncome = salary - costs;
- console.log(residualIncome); // 9778
+ // console.log(residualIncome); // 9778
 
  document.getElementById("reste").onclick = ()=>{
     document.getElementById("resteShow").innerHTML = residualIncome + currency;
