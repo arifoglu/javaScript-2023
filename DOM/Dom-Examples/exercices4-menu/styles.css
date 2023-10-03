@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+div#container {
+    min-height: 200vh;
+    margin: 10px auto;
+    box-shadow: 1px 1px 8px #ccc;
+}
+
+header {
+    background: #fff1c7;
+    height: 75px;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header > ul {
+    list-style: none;
+    height: 75px;
+    display: none;
+}
+
+header > ul > li {
+    flex: 1;
+    position: relative;
+}
+
+header > ul > li > a {
+    color: #000;
+    text-decoration: none;
+    height: 75px;
+    display: block;
+    font-size: 16px;
+    line-height: 75px;
+    padding: 0px 40px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #e8e5c5;
+}
+
+header > ul li a:hover {
+    background-color: #fff8d6;
+}
+
+header > ul > li > ul {
+    list-style: none;
+    position: absolute;
+    background: #fff1c7;
+    width: 100%;
+    border-width: 0 1px 1px 1px;
+    border-color: #ddd;
+    border-style: solid;
+    box-shadow: 0px 0px 4px #e5e5e5;
+}
+
+header > ul > li > ul li a {
+    background: none;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    padding: 30px 20px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+}
+
+
+
+header button {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin: 5px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+header button span {
+    display: block;
+    height: 4px;
+    margin: 10px 5px;
+    background: #000;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+
+body.fixed {
+    padding-top: 80px;
+}
+
+body.fixed header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+body.openmenu div#container {
+    min-height: 100vh;
+}
+
+body.openmenu header {
+    position: absolute;
+}
+
+body.openmenu header > ul {
+    display: block;
+    position: absolute;
+    top: 76px;
+    width: 100%;
+}
+
+body.openmenu header > ul.open li {
+    position: static;
+}
+
+body.openmenu header > ul > li > a {
+    background: #fff1c7;
+    border-bottom: 1px solid #ddd;
+}
+
+body.openmenu header > ul > li > ul {
+    position: static;
+}
+
+body.openmenu header > ul > li > ul li a {
+    padding-left: 70px;
+}
+
+body.openmenu header button span {
+    opacity: 0;
+}
+
+body.openmenu header button span:first-child {
+    opacity: 1;
+    transform: rotate(45deg);
+    position: relative;
+    top: 14px;
+}
+
+body.openmenu header button span:last-child {
+    opacity: 1;
+    transform: rotate(-45deg);
+    position: relative;
+    top: -14px;
+}
+
+@media (min-width:700px) {
+    div#container {
+        width: 700px;
+    }
+
+    header {
+        position: static;
+    }
+
+    header > ul {
+        display: flex;
+    }
+
+    header > ul > li > ul {}
+
+    header button {
+        display: none;
+    }
+}
