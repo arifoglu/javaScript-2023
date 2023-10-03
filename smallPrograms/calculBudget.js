@@ -35,6 +35,9 @@ buttonAgenda2.onclick = function(){
  document.getElementById("salary").onclick = ()=>{
     document.getElementById("salaryShow").innerHTML = salary + currency;
  };
+ document.getElementById("salary").onmouseout = ()=>{
+   document.getElementById("salaryShow").innerHTML = " ";
+ };
 
  // 2. we have to detect of numbers of Array
  const numbersOfIncome = incomeStatement.filter(value => typeof value === "number");
@@ -51,6 +54,9 @@ buttonAgenda2.onclick = function(){
  document.getElementById("costs").onclick = ()=>{
     document.getElementById("costShow").innerHTML = costs + currency;
  };
+ document.getElementById("costs").onmouseout = ()=>{
+   document.getElementById("costShow").innerHTML = " ";
+ };
 
 
  // 5.we will find a residual income and show on the page
@@ -59,6 +65,9 @@ buttonAgenda2.onclick = function(){
 
  document.getElementById("reste").onclick = ()=>{
     document.getElementById("resteShow").innerHTML = residualIncome + currency;
+ };
+ document.getElementById("reste").onmouseout = ()=>{
+   document.getElementById("resteShow").innerHTML = " ";
  };
 
  // 6.we will show a result if any need help and show on the page
