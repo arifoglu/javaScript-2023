@@ -14,6 +14,7 @@ window.onload = function(){
     if(input1 < input2 ){
         show.innerHTML = input2;
         document.getElementById("numero2").style.color = "green" ; 
+        document.getElementById("numero2").style.fontSize = "22px" ; 
     } else if( input1 > input2){
         show.innerHTML = input1;
         document.getElementById("numero1").style.color = "green" ;
@@ -29,4 +30,15 @@ function clearFields() {
     document.getElementById("numero2").value = "";
 };
 clearFields();
-}
+} 
+function myFunction(){
+    if(document.getElementById("numero1").value == "" && 
+       document.getElementById("numero1").value == "")
+    {
+        setTimeout(()=>{alert("you should write a number")},5000)
+    }
+    else{
+        
+    }
+};
+myFunction();

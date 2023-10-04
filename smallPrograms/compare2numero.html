@@ -8,19 +8,40 @@
 </head>
 <body>
     <style>
-        #container , input , h1 , button{
+        #container{
             background-color: aliceblue;
             padding: 10px;
-            margin: 10px;
+            margin: auto;
+            width: 600px;
+            height: 200px;
             text-align: center;
+            border: 1px solid;
             border-radius: 6px;
             font-size: 22px;
+        }
+        input{
+            width: 150px;
+            height: 30px;
+            border-radius: 6px;
+            text-align: center;
+        }
+    
+        button{
+            width: 90px;
+            height: 30px;
+            border-radius: 6px;
+            background-color: antiquewhite;
+            font-size: 16px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(205, 194, 181);
         }
        
     </style>
     <!--comparis areas-->
    <div id="container" >
-    <h1>Which one is greater </h1>
+    <h3>Which one is greater </h3>
     <input type="number" id="numero1" value="" placeholder="please enter a number">
     <input type="number" id="numero2" value="" placeholder="please enter a number">
     <!--when this button onclick become, it will work and comparis what entered two number-->
