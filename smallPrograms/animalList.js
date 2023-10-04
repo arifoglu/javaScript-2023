@@ -1,6 +1,8 @@
-const animals = ["cow","chicken","pig","chicken","sheep","cow","sheep","cow","cow","sheep","sheep"];
+const animals = ["cow","chicken",
+"pig","chicken","sheep","cow",
+"sheep","cow","cow","sheep","sheep"];
 
-document.getElementById("list").innerHTML = "myDepot = [" + animals + "]";
+document.getElementById("list").innerHTML ="<hr>" +"myDepot = [" + animals + "]" + " <hr>" ;
 
 let cowNumber = animals.filter(p => p == "cow").length;
 //console.log("cow" , cowNumber);
