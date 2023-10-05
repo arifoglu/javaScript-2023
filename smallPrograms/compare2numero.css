@@ -1,0 +1,29 @@
+#container{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 22px;
+}
+input{
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: antiquewhite;
+    font-size: 18px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(205, 194, 181);
+}
