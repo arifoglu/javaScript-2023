@@ -112,14 +112,14 @@ window.onload = function(){
 
      ///////    we will find salary more than 5000
      let highSalaryPerson = families.filter((person)=> person.salary > 5000)
-                                    .map((person)=>    person.firstname + " " + person.lastname  + "<br> ")
+                                    .map((person)=>    person.firstname + " " + person.lastname  + "<br>")
      ;
      //console.log(highSalaryPerson);
     
      let btn1 = document.querySelector("#buttonSalary");
      // console.log(btn1);
      btn1.onclick =()=>{
-        document.querySelector("#listSalary").innerHTML = highSalaryPerson;
+        document.querySelector("#listSalary").innerHTML = highSalaryPerson.join("");
      };
      btn1.onmouseout =()=>{
         document.querySelector("#listSalary").innerHTML = " ";
@@ -128,7 +128,7 @@ window.onload = function(){
     
      ///////     we will find chidrens boys
      let boysChildren = families.map((pChild)=> pChild.childrens.filter((pchild)=> pchild.gender == "boy")
-                                .map((pchild)=> pchild.name )) // map create new array
+                                .map((pchild)=> pchild.name + "<br>")) // map create new array
                                     
      ;
     // console.log(boysChildren);
@@ -136,7 +136,7 @@ window.onload = function(){
      let btn2 = document.querySelector("#buttonBoys");
      //console.log(btn2);
      btn2.onclick =()=>{
-        document.querySelector("#listBoy").innerHTML += boysChildren;
+        document.querySelector("#listBoy").innerHTML += boysChildren.join("");
      };
      btn2.onmouseout =()=>{
         document.querySelector("#listBoy").innerHTML = " ";
@@ -145,27 +145,27 @@ window.onload = function(){
     
       ///////     we will find chidrens girls
       let girlsChildren = families.map((pchild)=> pchild.childrens.filter((pchild)=> pchild.gender == "girl")
-                                  .map((pchild)=> pchild.name))
+                                  .map((pchild)=> pchild.name + "<br>"))
       ;
       // console.log(girlsChildren);
       let btn3 = document.querySelector("#buttonGirls");
       // console.log(btn3);
       btn3.onclick = ()=>{
-        document.querySelector("#listGirls").innerHTML = girlsChildren;
+        document.querySelector("#listGirls").innerHTML = girlsChildren.join("");
       };
       btn3.onmouseout = ()=>{
         document.querySelector("#listGirls").innerHTML = " ";
       };
       //////     we will find small ages in the childrens
     let kidsList = families.map((pchild)=> pchild.childrens.filter((pkids)=> pkids.age < 8)
-                           .map((pkids)=> pkids.name)) // for create new array
+                           .map((pkids)=> pkids.name + "<br>")) // for create new array
                        
     ;
     // console.log(kidsList);
     let btn4 = document.querySelector("#buttonSmallAge");
     // console.log(btn4);
     btn4.onclick = ()=>{
-      document.querySelector("#listSmallAge").innerHTML = kidsList;
+      document.querySelector("#listSmallAge").innerHTML = kidsList.join(" ");
     };
     btn4.onmouseout = ()=>{
         document.querySelector("#listSmallAge").innerHTML = " ";
@@ -175,14 +175,14 @@ window.onload = function(){
       ///////    we will find big ages in the childrens
       
       let bigKidsList =families.map((pkids)=> pkids.childrens.filter((pkids)=> pkids.age > 8)
-                                .map((pkids)=> pkids.name));
+                                .map((pkids)=> pkids.name + "<br>"));
     
     // console.log(bigKidsList);
     
     let btn5 = document.querySelector("#buttonBigAge");
     // console.log(btn5);
     btn5.onclick = ()=>{
-    document.querySelector("#listBigAge").innerHTML = bigKidsList;
+    document.querySelector("#listBigAge").innerHTML = bigKidsList.join(" ");
     };
     btn5.onmouseout = ()=>{
         document.querySelector("#listBigAge").innerHTML = " ";

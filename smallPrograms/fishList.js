@@ -114,15 +114,16 @@ window.onload = function(){
     ];
     
 let fishListShow = document.getElementById("fishList");
+let fishListHide = document.getElementById("fishListHide");
 // console.log(fishListShow);
+// console.log(fishListHide);
+
 fishListShow.onclick =()=>{
     document.querySelector("div#container > div#right").style.display = "block"
 } ;
-document.querySelector("div#container > div#right").onmouseout = ()=>{
-    document.querySelector("div#container > div#right").style.display = "none";
-}
-
-
+fishListHide.onclick =()=>{
+    document.querySelector("div#container > div#right").style.display = "none"
+} ;
     // we will find total kilogram of the stock
     let total = 0;
     const stokList = fishFarm.map((kilo)=> kilo.stockVolumeInKg);

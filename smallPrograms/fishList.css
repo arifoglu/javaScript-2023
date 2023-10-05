@@ -1,0 +1,59 @@
+div#container{
+    margin: auto;
+    width: 900px;
+    height: 1980px;
+    display: flex;
+}
+div#container > div#right{
+    width: 450px;
+    height: 1980px;
+    border: 1px solid;
+    background-color: rgb(193, 211, 205);
+    display: none;
+}
+div#container > div#left{
+    margin: auto;
+    width: 450px;
+    height: 1980px;
+    border: 1px solid;
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(193, 211, 205);
+    
+}
+div#left > div{
+    padding: 20px;
+    margin:inherit;
+    text-align: center;
+}
+button#fishList ,button#fishListHide{
+    width: 75px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: rgb(173, 214, 206);
+}
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: rgb(173, 214, 206);
+}
+button:hover ,button#fishList:hover ,button#fishListHide:hover{
+    cursor: pointer;
+    background-color: rgb(19, 219, 156);
+}
+
+p{
+    font-size: 18px;
+}
+h3{
+    text-align: center;
+}
+article{
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

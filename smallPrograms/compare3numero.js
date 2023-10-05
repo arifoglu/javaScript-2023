@@ -48,8 +48,11 @@ window.onload = function(){
     resultat.innerHTML = a + "=" + c + ">" + b ;
     else if(a == c && a < b )
     resultat.innerHTML = a + "=" + c + "<" + b ;
-    else
-    resultat.innerHTML = "EGAL"
+    else if(a == c && a == b )
+    resultat.innerHTML = a + "=" + c + "=" + b ;
+    else{}
+    ;
+    
     };
    /// 
     
@@ -77,6 +80,20 @@ window.onload = function(){
    
    document.querySelectorAll("div#container > input").forEach((p)=>{ p.value = ""});
    ;
+
+   function myFunction(){
+    if(document.getElementById("numero1").value == "" && 
+       document.getElementById("numero2").value == "" &&
+       document.getElementById("numero2").value == "")
+    {
+        setTimeout(()=>{alert("you should write a number")},5000)
+    }
+    else{
+
+    }
+};
+myFunction();
+
 
  }
 

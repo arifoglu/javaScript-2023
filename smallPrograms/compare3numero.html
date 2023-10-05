@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare3Number</title>
+    <link rel="stylesheet" href="compare3numero.css">
 </head>
+
 <body>
-    <style>
-        #container {
-            display: flex;
-            flex-direction: column;
-        }
-        #container , input , h1 , button{
-            background-color: aliceblue;
-            padding: 10px;
-            margin: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-size: 22px;
-        }
-        input[type="number"]:not(:focus):not(:placeholder-shown):invalid {
-         border-color: red;
-        }
-        input[type="number"]:not(:focus):not(:placeholder-shown):invalid~.error-message {
-            display: block;
-        }
-    </style>
-     <div id="container">
+
+    <div id="container">
         <!--compare areas-->
-     <h2>Which one is greater</h2>
-     <input type="number"  id="numero1" value="" placeholder="please enter number" required></input>
-     <input type="number"  id="numero2" value="" placeholder="please enter number" ></input>
-     <input type="number"  id="numero3" value="" placeholder="please enter number" ></input>
-     <!--this area will appear as a result-->
-     <p id="result"></p>
-     <!--when this button onclick become, it will work and compared what entered tree number-->
-     <button type="button" id="myBtn">compare</button>
-     </div>
+        <h3>Which one is greater</h3>
+        <input type="number" id="numero1" value="" placeholder="please enter number" required></input>
+        <input type="number" id="numero2" value="" placeholder="please enter number"></input>
+        <input type="number" id="numero3" value="" placeholder="please enter number"></input>
+        <!--this area will appear as a result-->
+        <p id="result"></p>
+        <!--when this button onclick become, it will work and compared what entered tree number-->
+        <button type="button" id="myBtn">compare</button>
+    </div>
 
 
     <script src="compare3numero.js"></script>
 </body>
+
 </html>
