@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <link rel="stylesheet" href="family.css">
+   
+</head>
+<body>
+    <div id="personList">
+        <button type="button" id="show">Person List</button>
+        <article style="display: none;">
+            families = [<br>
+            {
+               firstname: "Kevin",
+               lastname: "Doe",
+               partner: "Lauora",
+               childrens: [
+                  {
+                     name: "Mike",
+                     age: 8,
+                     gender: "boy"
+                  },
+                  {
+                     name: "Sue",
+                     age: 6,
+                     gender: "girl"
+                  },
+               ],
+               salary: 4000,
+            },<br>
+            {
+               firstname: "Gerard",
+               lastname: "Dufford",
+               partner: "Elsa",
+               childrens: [
+                  {
+                     name: "Melissa",
+                     age: 11,
+                     gender: "girl"
+                  },
+                  {
+                     name: "David",
+                     age: 6,
+                     gender: "boy"
+                  },
+               ],
+               salary: 6000,
+            },<br>
+            {
+               firstname: "Jack",
+               lastname: "Dorsey",
+               partner: "Catherine",
+               childrens: [
+                  {
+                     name: "Tom",
+                     age: 2,
+                     gender: "boy"
+                  },
+                  {
+                     name: "Michael",
+                     age: 6,
+                     gender: "boy"
+                  },
+               ],
+               salary: 5500,
+            },<br>
+            {
+               firstname: "Mourad",
+               lastname: "Hassan",
+               partner: "Leila",
+               childrens: [
+                  {
+                     name: "Haroon",
+                     age: 15,
+                     gender: "boy"
+                  },
+                  {
+                     name: "Samiya",
+                     age: 13,
+                     gender: "girl"
+                  },
+               ],
+               salary: 5300,
+            },<br>
+            {
+               firstname: "Paul",
+               lastname: "Dorade",
+               partner: "Marie",
+               childrens: [
+                  {
+                     name: "Teo",
+                     age: 8,
+                     gender: "boy"
+                  },
+               ],
+               salary: 3000,
+            },<br>
+            {
+               firstname: "Salomon",
+               lastname: "Hayko",
+               partner: "Selma",
+               childrens: [
+                  {
+                     name: "Monica",
+                     age: 4,
+                     gender: "girl"
+                  },
+               ],
+               salary: 7000,
+            },<br>
+         ]
+
+        </article>
+    </div>
+    <div id="top1">
+        <button id="buttonSalary">High Salary</button>
+        <p id="listSalary"></p>
+    </div>
+    <div id="top2">
+        <button id="buttonBoys">Boys Kids</button>
+        <p id="listBoy"></p>
+    </div>
+    <div id="top3">
+        <button id="buttonGirls">Girls Kids</button>
+        <p id="listGirls"></p>
+    </div>
+    <div id="top4">
+        <button id="buttonSmallAge">Kids Age < 8</button>
+        <p id="listSmallAge"></p>
+    </div>
+    <div id="top5">
+        <button id="buttonBigAge">Kids Age > 8</button>
+        <p id="listBigAge"></p>
+    </div>
+    <script src="family.js"></script>
+</body>
+</html>

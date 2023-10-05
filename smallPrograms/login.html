@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<style>
+    div#container{
+        margin: auto 300px;
+        border-radius: 6px;
+        min-width:  200px;
+        min-height: 200px;
+        background-color: rgb(229, 224, 229);
+    }
+    input{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    button{
+        margin: 10px;
+        padding: 10px;
+        width: 175px;
+        background-color: slategray;
+        border-radius: 6px;
+    };
+</style>
+<body>
+    <div id="container">
+        <input id="email" type="email" placeholder="email"><br><br>
+        <input id="password" type="password" 
+        placeholder="password"><br>
+        <button type="button" onclick="login()">login</button>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

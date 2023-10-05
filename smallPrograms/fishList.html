@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishList</title>
+    <style>
+        div#container{
+            margin: auto;
+            width: 900px;
+            height: 1980px;
+            display: flex;
+        }
+        div#container > div#right{
+            width: 450px;
+            height: 1980px;
+            border: 1px solid;
+            background-color: rgb(193, 211, 205);
+            display: none;
+        }
+        div#container > div#left{
+            margin: auto;
+            width: 450px;
+            height: 1980px;
+            border: 1px solid;
+            opacity: 0.7;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(193, 211, 205);
+            
+        }
+        div#left > div{
+            padding: 20px;
+            margin:inherit;
+            text-align: center;
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: rgb(173, 214, 206);
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(19, 219, 156);
+        }
+    
+        p{
+            font-size: 18px;
+        }
+        h3{
+            text-align: center;
+        }
+        article{
+            padding-top: 10px;
+            padding-left: 10px;
+            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <div id="container">
+       <div id="left">
+        <h3>Fish List Suisse</h3><hr>
+        <div>
+            <button id="fishList">FishList</button>
+        </div>
+        <div>
+            <button id="stock">Stokage Total</button>
+            <p id="stockShow"></p>
+        </div>
+        <div>
+            <button id="durability">Durability Fish</button>
+            <p id="durabilityShow"></p>
+        </div>
+        <div>
+            <button id="price">Price reasonable</button>
+            <p id="reasonableShow"></p>
+        </div>
+        <div>
+            <button id="winter">Winter fish VAUD</button>
+            <p id="winterFishShow"></p>
+        </div>
+        <div>
+            <button id="summer">Summer fish ZURICH</button>
+            <p id="summerFishShow"></p>
+        </div>
+        <div>
+            <button id="origin">Fish Origin</button>
+            <p id="fishOrigin"></p>
+        </div>
+       </div>
+
+       <div id="right">
+        <article><br>
+            <strong>fishFarm</strong> = [ 
+        {   <br>
+            <br>fishType: "Salmon",
+            <br>price: 15.70,
+            <br>entryDate: new Date(2021, 0, 1),    // 01.01.2021
+            <br>durationInDays: 30,
+            <br>itemWeightInGrams: 145,
+            <br>originCountry: "Norway", 
+            <br>season: "Winter", 
+            <br>stockVolumeInKg: 6500,
+            <br>saleLocations: ["ZH", "GE", "BE", "VD"],
+        },<br>
+        { 
+            <br>fishType: "Seatrout",
+            <br>price: 7.90,
+            <br>entryDate: new Date(2021, 11, 12),    // 12.12.2021
+            <br>durationInDays: 20,
+            <br>itemWeightInGrams: 460,
+            <br>originCountry: "Japan", 
+            <br>season: "Winter", 
+            <br>stockVolumeInKg: 1600,
+            <br>saleLocations: ["GL", "GR", "BE", "VS"],
+        },<br>
+        { 
+            <br>fishType: "Sailfish",
+            <br>price: 5.20,
+            <br>entryDate: new Date(2021, 3, 19),    
+            <br>durationInDays: 15,
+            <br>itemWeightInGrams: 240,
+            <br>originCountry: "United Kingdom", 
+            <br>season: "Spring", 
+            <br>stockVolumeInKg: 500,
+            <br>saleLocations: ["ZH", "SH", "BL", "SO"],
+        },<br>
+        { 
+            <br>fishType: "Red Drum",
+            <br>price: 3.10,
+            <br>entryDate: new Date(2021, 5, 15),   
+            <br>durationInDays: 18,
+            <br>itemWeightInGrams: 300,
+            <br>originCountry: "Poland", 
+            <br>season: "Summer", 
+            <br>stockVolumeInKg: 15500,
+            <br>saleLocations: ["FR", "GE", "NE", "TI"],
+        },<br>
+        { 
+            <br>fishType: "Pompano",
+            <br>price: 10,
+            <br>entryDate: new Date(2021, 8, 17),    
+            <br>durationInDays: 20,
+            <br>itemWeightInGrams: 645,
+            <br>originCountry: "France", 
+            <br>season: "Autumn", 
+            <br>stockVolumeInKg: 1500,
+            <br>saleLocations: ["ZH", "GE", "BE", "VD"],
+        },<br>
+        { 
+            <br>fishType: "Bluefish", 
+            <br>price: 13.70,
+            <br>entryDate: new Date(2021, 10, 11),  
+            <br>durationInDays: 5,
+            <br>itemWeightInGrams: 845,
+            <br>originCountry: "Italy", 
+            <br>season: "Winter", 
+            <br>stockVolumeInKg: 200,
+            <br>saleLocations: ["NW", "OW", "UR", "LU"],
+        },<br>
+        { 
+            <br>fishType: "Mackerel",
+            <br>price: 8.90,
+            <br>entryDate: new Date(2021, 6, 18),    
+            <br>durationInDays: 16,
+            <br>itemWeightInGrams: 150,
+            <br>originCountry: "GREECE", 
+            <br>season: "Summer", 
+            <br>stockVolumeInKg: 8100,
+            <br>saleLocations: ["AG", "BL", "BE", "VD", "TG"],
+        },<br>
+        { 
+            <br>fishType: "Perch",
+            <br>price: 11.90,
+            <br>entryDate: new Date(2021, 10, 1),  
+            <br>durationInDays: 30,
+            <br>itemWeightInGrams: 222,
+            <br>originCountry: "Egypt", 
+            <br>season: "Summer", 
+            <br>stockVolumeInKg: 9500,
+            <br>saleLocations: ["TI", "GE", "ZH", "VD", "AR"],
+        },<br>
+        { 
+            <br>fishType: "Mullet",
+            <br>price: 4.80,
+            <br>entryDate: new Date(2021, 2, 14),   
+            <br>durationInDays: 30,
+            <br>itemWeightInGrams: 333,
+            <br>originCountry: "Vietnam", 
+            <br>season: "Summer", 
+            <br>stockVolumeInKg: 600,
+            <br>saleLocations: ["ZH", "GE", "BE", "VD"],
+        },<br>
+        { 
+            <br>fishType: "Tuna",
+            <br>price: 19.50,
+            <br>entryDate: new Date(2021, 0, 1),    
+            <br>durationInDays: 30,
+            <br>itemWeightInGrams: 250,
+            <br>originCountry: "Spain", 
+            <br>season: "Winter", 
+            <br>stockVolumeInKg: 2300,
+            <br>saleLocations: ["ZH", "VD", "BS", "TI", "SG"],
+        },  
+    ];
+        </article>
+       </div>
+   </div>
+
+  
+
+
+
+
+    <script src="fishList.js"></script>
+</body>
+</html>
