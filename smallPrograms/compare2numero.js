@@ -13,13 +13,17 @@ window.onload = function(){
     
     if(input1 < input2 ){
         show.innerHTML = input2;
-        document.getElementById("numero2").style.color = "green" ; 
-        document.getElementById("numero2").style.fontSize = "22px" ; 
+        document.getElementById("numero2").style.color = "white" ; 
+        document.getElementById("numero2").style.backgroundColor = "green" ; 
     } else if( input1 > input2){
         show.innerHTML = input1;
-        document.getElementById("numero1").style.color = "green" ;
+        document.getElementById("numero1").style.color = "white" ;
+        document.getElementById("numero1").style.backgroundColor = "green" ; 
     }else if( input1 == input2){    
-        show.innerHTML = "egal"
+        document.getElementById("numero1").style.backgroundColor = "yellow"
+        document.getElementById("numero2").style.backgroundColor = "yellow" ; 
+         ; 
+
     }else{
 
     }
@@ -38,7 +42,7 @@ function myFunction(){
         setTimeout(()=>{alert("you should write a number")},5000)
     }
     else{
-        
+
     }
 };
 myFunction();
