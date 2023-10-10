@@ -1,0 +1,75 @@
+body *{
+box-sizing: border-box;
+}
+main{
+    width: 150px;
+    height: 410px;
+    margin: auto;  
+    border: 5px solid;
+    border-radius: 3px;
+}
+h3{
+    text-align: center;
+}
+div#container{
+    margin: auto;
+    width: 100px;
+    height: 300px;
+    
+}
+div#top{
+    width: 100px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+}
+div#top > button{
+    width: 50px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: black;
+    margin-bottom: 2px;
+}
+div#batteryContainer{
+    width: 100px;
+    height: 251px;
+}
+div#batteryContainer > div {
+    border: 1px solid;
+    opacity: 0.5;
+    width: 100px;
+    height: 84px;
+    border-radius: 3px;
+}
+div#buttonContainer{
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    background-color: rgb(97 91 91 / 38%)
+    
+}
+.buttonChange{
+    margin: 5px;
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 16px;
+}
+.buttonChange:hover{
+    cursor: pointer;
+    color: black;
+    background-color: antiquewhite;
+}
+h4{
+    text-align: center;
+    color: red;
+    display: none
+}
+h5{
+    display:none ;
+    text-align: center;
+    color: green;
+}
