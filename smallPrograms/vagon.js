@@ -20,7 +20,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it He is far away" + "<br>" + clicks ;
     this.style.backgroundColor = "red";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
@@ -31,7 +31,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it He is far away" + "<br>" + clicks ;
     this.style.backgroundColor = "red";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
@@ -42,7 +42,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it He is far away" + "<br>" + clicks ;
     this.style.backgroundColor = "red";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
@@ -53,7 +53,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it but he can be near" + "<br>" + clicks ;
     this.style.backgroundColor = "yellow";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
@@ -64,7 +64,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it but he can be near" + "<br>" + clicks ;
     this.style.backgroundColor = "yellow";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
@@ -75,7 +75,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it but he can be near" + "<br>" + clicks ;
     this.style.backgroundColor = "yellow";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
@@ -95,7 +95,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it but he can be near" + "<br>" + clicks ;
     this.style.backgroundColor = "yellow";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
@@ -106,7 +106,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it but he can be near" + "<br>" + clicks ;
     this.style.backgroundColor = "yellow";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
@@ -117,7 +117,7 @@ let result2 = document.getElementById("clicksnumber");
     result.innerHTML = "You didnt find it but he can be near" + "<br>" + clicks ;
     this.style.backgroundColor = "yellow";
     if (clicks > 3)
-   result2.innerHTML = "GAME OVER AHMET HAS GONE";
+   result2.innerHTML = "GAME OVER HE HAS GONE";
     if (clicks > 4)
     alert("!!!DONT TRY IT!!! ");
  }
