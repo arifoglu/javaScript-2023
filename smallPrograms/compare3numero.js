@@ -86,14 +86,12 @@ window.onload = function(){
        document.getElementById("numero2").value == "" &&
        document.getElementById("numero2").value == "")
     {
-        setTimeout(()=>{alert("you should write a number")},5000)
+        alert("you should write a number")
     }
     else{
-
     }
 };
-myFunction();
-
+setTimeout(myFunction,5000)
 
  }
 
