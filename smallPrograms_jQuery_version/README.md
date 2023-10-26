@@ -1,1 +1,1 @@
-https://arifoglu.github.io/javaScript-2023/smallPrograms(jQuery)/calculBudget.html
+https://arifoglu.github.io/javaScript-2023/smallPrograms_jQuery_version/calculBudget.html
