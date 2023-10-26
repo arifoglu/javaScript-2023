@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Inspect</title>
+    <link rel="stylesheet" href="calculBudget.css">
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <h1>Budget Inspect <br><span style="font-size: 10px;">(jQuery version)</span></h1><hr>
+            <div id="topButton">
+                <button id="agenda">Show Agenda</button>
+                <button id="agenda2">Hide Agenda</button>
+            </div>
+            <div>
+                <p id="agendaShow"><span><strong>MyAgendas :</strong></span><i>[15000, 2000, 1000, 300, 200,"important
+                    electronic", 600,79, "abo", 342,"printer",450, 32, 45, "fitness", 64, 10, 23, 12,2, 56, 7];</i>
+                </p>
+               </div>
+        </div>
+        <div>
+            <button id="salary">salary</button>
+            <p id="salaryShow"></p>
+        </div>
+        <div>
+            <button id="costs">costs</button>
+            <p id="costShow"></p>
+        </div>
+        <div>
+            <button id="reste">outcome</button>
+            <p id="resteShow"></p>
+        </div>
+        <div>
+            <button id="queryHelp">?Help</button>
+            <p id="queryShow"></p>
+            <h5>*If the income is below 10000, aid is required.</h5>
+        </div>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="calculBudget.js"></script>
+</body>
+
+</html>
